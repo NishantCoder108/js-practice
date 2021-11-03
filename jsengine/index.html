@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Engine</title>
+  </head>
+  <body>
+    <h1>How Js Engine Works</h1>
+    <input type="button" id="btn" value="Submit" />
+    <script>
+      // Example 1
+      /*      console.log("Start");
+
+
+      setTimeout(function cb() {
+        console.log("Call back");
+      }, 5000);
+
+      console.log('End')
+
+.................................................................
+
+      //Example 2 [for DOM Api]
+_____________________________________
+
+      console.log("Start");
+      document
+        .getElementById("btn")
+        .addEventListener("click", function callback() {
+          console.log("Clicked");
+        });
+      console.log("End");
+.................................................................
+     
+
+      //Example 3 [DOM Api and SetTimeout Function]
+   _______________________________________________
+ 
+      console.log('Start')
+
+      setTimeout(function cb() {
+          console.log('Callback of setTimeout')
+      }, 5000);
+
+      document.getElementById('btn')
+      .addEventListener('click' , function callback() {
+          console.log('clicked')
+      })
+
+      console.log('End')
+
+      //First come in callstack queue and first execute 
+
+
+  
+.......................................................................
+      //    Example 4 [fetch Api]
+
+      console.log("Start");
+
+      fetch("https://jsonplaceholder.typicode.com/todos/1")
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
+      setTimeout(function cb() {
+        console.log("Callback");
+      }, 5000);
+
+      console.log("End");
+
+    */
+    </script>
+  </body>
+</html>
+
+<!--  jsengine is the heart of javascript runtime environment , it is present in nodejs and also in browser  , 
+ along with have Callstack(inside jsengine)  , web api , callstack queue , microtask queue ,  and main thing is event loop . 
+ 
+ Event Loop is monitoring the callstack , callstack is empty or not . if callstack is empty , then it will send to callstack of callstack queue's task and then it will execute .
+
+ fetch api have high priority because of it have promise and mutation observer 
+
+      ________How js Engine Architecture Work ______
+      javascript
+      Javascript code run , first it parse and it create token and goes to (arbitrary syntax tree ) ast . it make a  tree  and then move to intrepreter(ignition) , with the help of callstack and memory heap , it executes . it parallel turbo compiler work and it optimize the code to machine code and convert to bytecode.
+
+---JavaScript is JIT compilation language---
+
+
+-->

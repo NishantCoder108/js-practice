@@ -1,0 +1,42 @@
+console.log("Start");
+
+const radius = [3, 4, 5, 6, 2, 7];
+
+const areaCalculate = function area(radius) {
+  const output = [];
+
+  for (i = 0; i < radius.length; i++) {
+    output.push(Math.PI * radius[i] * radius[i]);
+  }
+
+  return output;
+};
+
+console.log(areaCalculate(radius));
+
+//____________________________________________
+
+const circumferenceCalculate = function circumference(radius) {
+  const output = [];
+
+  for (i = 0; i < radius.length; i++) {
+    output.push(2 * Math.PI * radius[i]);
+  }
+  return output;
+};
+
+console.log(circumferenceCalculate(radius));
+
+//________________________________________________
+
+const diameter = function diameter(radius) {
+  const output = [];
+
+  for (i = 0; i < radius.length; i++) {
+    output.push(2 * radius[i]);
+  }
+
+  return output;
+};
+
+console.log(diameter(radius));
