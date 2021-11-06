@@ -7,7 +7,7 @@ console.log("filter");
 // offOdd
 
 const arr = [3, 5, 8, 5, 7, 9];
-let output = [];
+
 
 function isEven(x) {
   return x % 2 === 0;

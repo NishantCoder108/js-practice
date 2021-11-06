@@ -34,7 +34,7 @@ const largeNum = function (x) {
 
 // console.log(largeNum(arr))
 
-//Method 2 :- By Reduce Method ------------------------
+// ----------Method 2 :- By Reduce Method ------------------------
 
 //1. Large Number
 const reduceLargeNum = arr.reduce(function (max, curr) {

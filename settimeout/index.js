@@ -27,5 +27,9 @@ console.log('End')
 
 /*   callback function is execute when whole code is executed , you had see example 1 
 
-    settime out with 0 time gave , it all cod eexecuted then it will go to callstack queue and move to callstack by in the monitoring of event loop.
+    settime out with 0 time gave , when whole code is eexecuted then it will go to callstack queue and move to callstack by in the monitoring of event loop.
+
+
+    --------What is set timeout  method-------
+    The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
 */
