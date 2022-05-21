@@ -32,7 +32,7 @@ console.log(radius.map(area));
 
 Higher Order Function : - A function which inside the another function and return function itself this is called higher order function . 
 
-Callback Function : -  When a function which is passed into higher order function is known as callback fucntion.
+Callback Function : -  When a function which is passed into higher order function is known as callback function.
 
 Function is first class citizen in javascript.
 
