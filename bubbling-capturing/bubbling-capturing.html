@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling and Capturing</title>
+</head>
+<body>
+    <h1>Bubbling and Capturing</h1>
+    <p id="parent">Lorem ipsum dolor s <strong id="child">I am Strong tag</strong> sit, amet consectetur adipisicing elit. Voluptates veniam exercitationem corrupti, quas totam est incidunt amet unde nobis magnam excepturi, magni, commodi autem. Vero officiis aperiam dolorum facere qui.</p>
+<!-- Bubbling goes throung child to parent and Capturing goes through parent to child -->
+    <script>
+        const parent = document.getElementById('parent')
+        const child = document.getElementById('child')
+
+        parent.addEventListener('click',function(){
+            console.log("I am Parent")
+        },true) //when we give true , it work as capturing , it is by default is Bubbling
+
+        child.addEventListener('click',()=>{
+            console.log("I am child")
+        })
+    </script>
+</body>
+</html>
